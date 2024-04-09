@@ -1,0 +1,11 @@
+﻿
+<section class="flex flex-wrap justify-between mt-20 w-3/4 mx-auto">
+    @foreach (var book in ViewBag.Books)
+    {
+        <article class="my-10 mx-4 shadow-xl w-1/4 p-4 rounded-lg">
+            <h2 class="text-3xl font-bold">@book.Title</h2>
+            <p class="mt-6 text-xl italic">@book.Author.Name @book.Author.LastName</p>
+            <p class="mt-6 font-bold">ISBN: @book.ISBN</p>
+        </article>
+    }
+</section>
